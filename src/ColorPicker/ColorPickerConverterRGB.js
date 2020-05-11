@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Input from '../Input';
 
-import { st, classes } from './ColorPickerConverter.st.css';
+import { classes } from './ColorPickerConverter.st.css';
 import ColorPickerConverterViewer from './ColorPickerConverterViewer';
 import { safeColor, getRgbOrEmpty } from './utils';
 
