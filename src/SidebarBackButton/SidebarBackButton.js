@@ -15,6 +15,7 @@ class SidebarBackButton extends React.PureComponent {
 
   static propTypes = {
     dataHook: PropTypes.string,
+    className: PropTypes.string,
     onClick: PropTypes.func,
     /** Text for the button */
     children: PropTypes.string,
