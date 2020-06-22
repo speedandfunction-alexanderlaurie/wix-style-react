@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FillPreview from '../FillPreview/FillPreview';
-import { st, classes } from './Palette.st.css';
+import { classes } from './Palette.st.css';
 
 /** A component to show a palette of colors */
 class Palette extends React.PureComponent {
@@ -22,7 +22,7 @@ class Palette extends React.PureComponent {
     const { fill, dataHook } = this.props;
 
     return (
-      <div className={st(classes.root)} data-hook={dataHook}>
+      <div className={classes.root} data-hook={dataHook}>
         {fill.map((item, i) => (
           <FillPreview
             as="div"

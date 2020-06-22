@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Input from '../Input';
 
-import { st, classes } from './ColorPickerConverter.st.css';
+import { classes } from './ColorPickerConverter.st.css';
 import ColorPickerConverterViewer from './ColorPickerConverterViewer';
 import { safeColor, getHsbOrEmpty } from './utils';
 
@@ -24,11 +24,7 @@ export default class ColorPickerConverterHsb extends React.PureComponent {
   render() {
     const { dataHook } = this.props;
     return (
-<<<<<<< HEAD
-      <div className={st(classes.root)} data-hook={dataHook}>
-=======
-      <div className={st(classes.root)}>
->>>>>>> 2ef14b682... chore(*): stylable migration
+      <div className={classes.root} data-hook={dataHook}>
         <div className={classes.distribute}>
           <Input
             size="small"

@@ -8,7 +8,7 @@ import DropdownLayout, {
 } from '../DropdownLayout/DropdownLayout';
 import Highlighter from '../Highlighter/Highlighter';
 import { chainEventHandlers } from '../utils/ChainEventHandlers';
-import { st, classes } from './InputWithOptions.st.css';
+import { classes } from './InputWithOptions.st.css';
 import nativeStyles from './InputWithOptions.scss';
 import { placements } from '../Popover/constants';
 import uniqueId from 'lodash/uniqueId';
@@ -228,7 +228,7 @@ class InputWithOptions extends Component {
     const body = popoverProps.appendTo === 'window';
     return !native ? (
       <Popover
-        className={st(classes.root)}
+        className={classes.root}
         {...DEFAULT_POPOVER_PROPS}
         dynamicWidth={body}
         excludeClass={this.uniqueId}

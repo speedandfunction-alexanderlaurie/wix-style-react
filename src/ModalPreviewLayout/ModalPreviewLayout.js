@@ -4,7 +4,7 @@ import X from 'wix-ui-icons-common/X';
 import Text from '../Text';
 import IconButton from '../IconButton';
 import Tooltip from '../Tooltip';
-import { st, classes } from './ModalPreviewLayout.st.css';
+import { classes } from './ModalPreviewLayout.st.css';
 import { dataHooks, modalPreviewIDs, arrowsDirection } from './constants';
 import NavigationButton from './NavigationButton/NavigationButton';
 
@@ -105,7 +105,7 @@ class ModalPreviewLayout extends React.PureComponent {
       <div
         id={modalPreviewIDs.overlay}
         data-hook={dataHook}
-        className={st(classes.root)}
+        className={classes.root}
         onClick={this._onOverlayClick(onClose)}
       >
         <div className={classes.header}>

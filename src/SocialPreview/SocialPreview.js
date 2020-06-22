@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { st, classes } from './SocialPreview.st.css';
+import { classes } from './SocialPreview.st.css';
 
 import Text from '../Text';
 
@@ -26,7 +26,7 @@ class SocialPreview extends React.Component {
     const { title, description, previewUrl, media } = this.props;
 
     return (
-      <div className={st(classes.root)} data-hook={this.props.dataHook}>
+      <div className={classes.root} data-hook={this.props.dataHook}>
         {media}
         <div className={classes.container}>
           <Text

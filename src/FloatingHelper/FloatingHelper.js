@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ClosablePopover from './ClosablePopover/ClosablePopover';
 import FloatingHelperContent from './FloatingHelperContent/FloatingHelperContent';
-import { st, classes } from './FloatingHelper.st.css';
+import { classes } from './FloatingHelper.st.css';
 import { dataHooks, floatingHelperAppearance } from './constants';
 import CloseButton from '../CloseButton';
 import {
@@ -71,7 +71,7 @@ class FloatingHelper extends React.Component {
       <ClosablePopover
         {...closablePopoverProps}
         ref={ref => (this.closablePopoverRef = ref)}
-        className={st(classes.root)}
+        className={classes.root}
       />
     );
   }
