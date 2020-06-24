@@ -31,7 +31,6 @@
 }
 
 .tab {
-  -st-states: active(boolean);
   position: relative;
   padding: 18px 18px 16px;
   margin: 0 0 -1px;
@@ -71,10 +70,12 @@
 .tab span.tabText:hover {
   color: value(B10);
 }
-.tab:active {
+
+.active {
   border-color: value(B10);;
 }
-.tab:active span.tabText {
+
+.active span.tabText {
   color: value(B10);;
 }
 

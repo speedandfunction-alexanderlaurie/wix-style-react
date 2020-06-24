@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import pick from '../../../utils/operators/pick';
 import Text from '../../../Text';
 import * as TabPropTypes from '../constants/tab-prop-types';
@@ -23,7 +24,7 @@ class TabItem extends React.Component {
     const containerProps = {
       key: item.id,
       onClick: () => onItemClick(item),
-      ...styles('tab', { active: isActive }),
+      className: classNames(styles.tab, { [styles.active]: isActive }),
       style: this.getItemStyle(),
       ...pick(this.props, dynamicProperties),
     };
