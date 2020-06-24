@@ -10,14 +10,9 @@
 }
 
 .container {
-  /*@include Text($weight: normal, $size: medium);*/
   display: flex;
   max-width: 100%;
   border-bottom: 1px solid transparent;
-}
-
-.hasDivider{
-  border-color: value(D60);
 }
 
 .itemsContainer {
@@ -43,11 +38,10 @@
 }
 
 .compact .tab {
-  padding-right: value(sidePadding);
-  padding-left: value(sidePadding);
-
-  margin-right: value(sideMargin);
-  margin-left: value(sideMargin);
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .uniformFull .tab {
@@ -55,28 +49,32 @@
 }
 
 .compactSide .tab {
-  padding-left: value(sidePadding);
-  padding-right: value(sidePadding);
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.compactSide .tab:not(:first-child){
-   margin-left: value(compactSideMargin);
+.compactSide .tab:not(:first-child) {
+  margin-left: 18px;
 }
 
 .compactSide .tab:not(:last-child) {
-   margin-right: value(compactSideMargin);
- }
+  margin-right: 18px;
+}
 
 .tab span.tabText:hover {
   color: value(B10);
 }
 
-.active {
-  border-color: value(B10);;
+.tab.active {
+  border-color: value(B10);
 }
 
-.active span.tabText {
-  color: value(B10);;
+.tab.active span.tabText {
+  color: value(B10);
+}
+
+.hasDivider {
+  border-color: value(D60);
 }
 
 .sideContent {
