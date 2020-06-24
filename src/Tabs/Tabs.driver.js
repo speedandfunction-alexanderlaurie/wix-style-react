@@ -1,7 +1,7 @@
 import ReactTestUtils from 'react-dom/test-utils';
 
 import TabTypes from './core/constants/tab-types';
-import styles from './Tabs.scss';
+import styles from './Tabs.st.css';
 
 const tabsDriverFactory = ({ element }) => {
   const findFirst = query => element.querySelector(query);
