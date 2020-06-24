@@ -10,14 +10,13 @@
 }
 
 .container {
-  -st-states: hasDivider(boolean);
   /*@include Text($weight: normal, $size: medium);*/
   display: flex;
   max-width: 100%;
   border-bottom: 1px solid transparent;
 }
 
-.container:hasDivider{
+.hasDivider{
   border-color: value(D60);
 }
 
